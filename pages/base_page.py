@@ -6,7 +6,7 @@ from utils.logger_utils import log
 
 
 class BasePage:
-    TIMEOUT = 10
+    TIMEOUT = 20
 
     def __init__(self, driver):
         self.driver = driver
@@ -15,13 +15,16 @@ class BasePage:
     # ── Finders ───────────────────────────────────────────────────────────────
 
     def find(self, locator: tuple):
-        return self.wait.until(EC.presence_of_element_located(locator))
+        return self.wait.until(EC.visibility_of_element_located(locator))
 
     def find_clickable(self, locator: tuple):
         return self.wait.until(EC.element_to_be_clickable(locator))
 
     def find_all(self, locator: tuple):
-        return self.wait.until(EC.presence_of_all_elements_located(locator))
+        self.wait.until(
+            EC.presence_of_element_located(locator)
+        )
+        return self.driver.find_elements(*locator)
 
     def is_visible(self, locator: tuple, timeout: int = 5) -> bool:
         try:
@@ -40,7 +43,7 @@ class BasePage:
 
     def clear_and_type(self, locator: tuple, text: str):
         log.info(f"   Typing '{text}' → {locator[1]}")
-        field = self.find(locator)
+        field = self.find_clickable(locator)
         field.clear()
         field.send_keys(text)
 

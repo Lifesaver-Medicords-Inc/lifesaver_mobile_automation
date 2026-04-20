@@ -1,18 +1,27 @@
+from gettext import find
+
 from appium.webdriver.common.appiumby import AppiumBy
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 from pages.base_page import BasePage
 from utils.logger_utils import log
 
 
 class LoginPage(BasePage):
 
-    # ── Locators ──────────────────────────────────────────────────────────────
-    # ⚠️  Replace values with your actual app's element IDs / xpaths
+    def __init__(self, driver):
+        self.driver = driver
+        self.wait   = WebDriverWait(driver, self.TIMEOUT)
 
-    # Common (iOS + Android)
-    LOGIN_SCREEN         = (AppiumBy.XPATH, '//*[@text="Welcome Back,"]')
-    EMAIL_FIELD          = (AppiumBy.XPATH, '//*[@text="Enter Email"]')
-    PASSWORD_FIELD       = (AppiumBy.XPATH, '//*[@text="Enter Password"]')
-    LOGIN_BUTTON         = (AppiumBy.XPATH, '//*[@text="Login"]')
+    # ── Locators ──────────────────────────────────────────────────────────────
+    #  Replace values with your actual app's element IDs / xpaths
+
+    # Common (Android)
+    LOGIN_SCREEN         = (AppiumBy.ACCESSIBILITY_ID, 'Welcome Back,')
+    EMAIL_FIELD          = (AppiumBy.XPATH, "//android.widget.EditText[@resource-id='txt_email']")
+    PASSWORD_FIELD       = (AppiumBy.XPATH, "//android.widget.EditText[@resource-id='txt_password']")
+    LOGIN_BUTTON         = (AppiumBy.ACCESSIBILITY_ID, 'Login')
     FORGOT_PASSWORD_LINK = (AppiumBy.XPATH, '//*[@text="Forgot Password"]')
     REQUIRED_FIELD_ERROR = (AppiumBy.XPATH, '//*[@text="Required field"]')
     ERROR_MESSAGE        = (AppiumBy.XPATH, '//*[contains(@text,"Invalid") or contains(@text,"incorrect") or contains(@text,"Wrong")]')
@@ -23,11 +32,6 @@ class LoginPage(BasePage):
     SEND_RESET_BUTTON      = (AppiumBy.ACCESSIBILITY_ID, "send_reset_button")
     RESET_CONFIRMATION     = (AppiumBy.ACCESSIBILITY_ID, "reset_confirmation_message")
 
-    # iOS only
-    FACE_ID_BUTTON         = (AppiumBy.ACCESSIBILITY_ID, "face_id_button")
-
-    # Android only
-    FINGERPRINT_BUTTON     = (AppiumBy.ACCESSIBILITY_ID, "fingerprint_button")
 
     # ── Waits ─────────────────────────────────────────────────────────────────
 
@@ -42,10 +46,12 @@ class LoginPage(BasePage):
     # ── Actions ───────────────────────────────────────────────────────────────
 
     def enter_email(self, email: str):
+        self.tap(self.EMAIL_FIELD)
         log.info(f"   Entering email → {email or '(empty)'}")
         self.clear_and_type(self.EMAIL_FIELD, email)
 
     def enter_password(self, password: str):
+        self.tap(self.PASSWORD_FIELD)
         log.info("   Entering password → ****")
         self.clear_and_type(self.PASSWORD_FIELD, password)
 
