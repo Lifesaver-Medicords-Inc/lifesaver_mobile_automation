@@ -1,6 +1,8 @@
 from appium.webdriver.common.appiumby import AppiumBy
 from pages.base_page import BasePage
 from utils.logger_utils import log
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class HomePage(BasePage):
@@ -8,7 +10,7 @@ class HomePage(BasePage):
     # ── Locators ──────────────────────────────────────────────────────────────
     # ⚠️  Replace values with your actual app's element IDs / xpaths
 
-    HOME_SCREEN        = (AppiumBy.ACCESSIBILITY_ID, "home_screen")
+    HOME_SCREEN        = (AppiumBy.XPATH, '//android.view.View[@content-desc="Home"]')
     PROFILE_TAB        = (AppiumBy.ACCESSIBILITY_ID, "profile_tab")
     LOGOUT_BUTTON      = (AppiumBy.ACCESSIBILITY_ID, "logout_button")
     LOGOUT_CONFIRM     = (AppiumBy.ACCESSIBILITY_ID, "logout_confirm_button")
@@ -20,7 +22,10 @@ class HomePage(BasePage):
 
     def wait_for_home_screen(self):
         log.info("⏳ Waiting for home screen...")
-        self.find(self.HOME_SCREEN)
+        # self.find(self.HOME_SCREEN)
+        WebDriverWait(self.driver, 120).until(
+            EC.visibility_of_element_located(self.HOME_SCREEN)
+        )
         log.info("✅ Home screen is visible")
 
     def is_home_screen_visible(self) -> bool:

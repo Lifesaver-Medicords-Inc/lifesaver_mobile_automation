@@ -117,44 +117,62 @@ appium --address 0.0.0.0 --port 4723
 
 ## Run Tests
 
+### CLI Flags
+
+| Flag | Options | Default | Description |
+|---|---|---|---|
+| `--platform` | `ios`, `android` | `ios` | Target device platform |
+| `--test-type` | `smoke`, `regression` | `smoke` | Controls `noReset` — smoke resets app state, regression preserves it |
+
+---
+
 ### Android
 ```bash
-# all android tests
+# all android tests (smoke)
 pytest tests/android/ --platform android
 
 # smoke only
-pytest tests/android/smoke/ --platform android
+pytest tests/android/smoke/ --platform android --test-type smoke
 
 # regression only
-pytest tests/android/regression/ --platform android
+pytest tests/android/regression/ --platform android --test-type regression
 ```
 
 ### iOS
 ```bash
-# all ios tests
+# all ios tests (smoke)
 pytest tests/ios/ --platform ios
 
 # smoke only
-pytest tests/ios/smoke/ --platform ios
+pytest tests/ios/smoke/ --platform ios --test-type smoke
 
 # regression only
-pytest tests/ios/regression/ --platform ios
+pytest tests/ios/regression/ --platform ios --test-type regression
 ```
 
 ### With extra flags
 ```bash
 # verbose output + show logs in terminal
-pytest tests/android/ --platform android -v -s
+pytest tests/android/ --platform android --test-type smoke -v -s
 
 # stop after first failure
-pytest tests/android/ --platform android -x
+pytest tests/android/ --platform android --test-type smoke -x
 
 # run specific test file
-pytest tests/android/smoke/test_login.py --platform android
+pytest tests/android/smoke/test_login.py --platform android --test-type smoke
 
 # run specific test
-pytest tests/android/smoke/test_login.py::TestAndroidLoginSmoke::test_email_login_success --platform android
+pytest tests/android/smoke/test_login.py::TestAndroidLoginSmoke::test_email_login_success --platform android --test-type smoke
 ```
+
+---
+
+## `--test-type` Behavior
+
+| `--test-type` | `appium:noReset` | Effect |
+|---|---|---|
+| `smoke` | `False` | App is reset before session — clean state every run |
+| `regression` | `True` | App state is preserved — faster runs, retains session data |
 
 ---
 
@@ -162,7 +180,7 @@ pytest tests/android/smoke/test_login.py::TestAndroidLoginSmoke::test_email_logi
 
 ```bash
 # run tests (results saved to allure-results/ automatically)
-pytest tests/android/ --platform android
+pytest tests/android/ --platform android --test-type smoke
 
 # open report in browser
 allure serve allure-results
