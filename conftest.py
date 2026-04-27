@@ -1,4 +1,8 @@
+import json
+from pathlib import Path
+
 import pytest
+from faker import Faker
 from appium.options.android import UiAutomator2Options
 from appium.options.ios import XCUITestOptions
 from appium import webdriver
@@ -84,6 +88,7 @@ def driver(platform, no_reset):
     log.info(" Session closed.")
 
 
+
 # ── Function-scoped: logged-in driver ────────────────────────────────────────
 
 @pytest.fixture(scope="function")
@@ -116,6 +121,37 @@ def logged_in_driver(driver, platform):
 
     login.logout()
 
+# ── Test Data initialization ─────────────────────────────────────────────────
+
+def load_data(filename: str) -> dict:
+    path = Path(__file__).parent / "test-data" / filename
+    with open(path, "r") as f:
+        return json.load(f)
+
+@pytest.fixture(scope="session")
+def test_data() -> dict:
+    return load_data("record_test_data.json")
+
+# Categories for test data
+@pytest.fixture(scope="session")
+def allergy_data(test_data):
+    return test_data["allergy"]
+
+@pytest.fixture(scope="session")
+def procedure_data(test_data):
+    return test_data["procedures"]
+
+@pytest.fixture(scope="session")
+def prescription_data(test_data):
+    return test_data["prescription"]
+
+@pytest.fixture(scope="session")
+def vaccine_data(test_data):
+    return test_data["vaccine"]
+
+@pytest.fixture(scope="session")
+def expense_data(test_data):
+    return test_data["expenses"]
 
 # ── Auto-skip tests marked for a specific platform ───────────────────────────
 

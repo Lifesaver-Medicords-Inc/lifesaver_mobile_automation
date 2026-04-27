@@ -1,0 +1,61 @@
+2026-04-21 16:11:21 │ INFO     │ Platform selected → ANDROID
+2026-04-21 16:11:21 │ INFO     │ Test type → SMOKE │ noReset → False
+2026-04-21 16:11:21 │ INFO     │ 🚀 Starting Appium session...
+2026-04-21 16:11:21 │ INFO     │    Platform → ANDROID
+2026-04-21 16:11:21 │ INFO     │    Server   → http://127.0.0.1:4723
+2026-04-21 16:11:21 │ INFO     │    Device   → QA Test
+2026-04-21 16:11:21 │ INFO     │    UDID     → 8T4PHMPZRO8L7LVS
+2026-04-21 16:11:21 │ INFO     │    noReset  → False
+2026-04-21 16:11:33 │ INFO     │  Session started │ ID: 425743f7-43f4-4ebe-a2a9-335d45cb770b
+2026-04-21 16:11:34 │ INFO     │ Waiting for onboarding screen...
+2026-04-21 16:11:34 │ INFO     │ Onboarding screen visible
+2026-04-21 16:11:34 │ INFO     │    Tapping Next
+2026-04-21 16:11:34 │ INFO     │    Tapping → Next
+2026-04-21 16:11:36 │ INFO     │    Tapping Next
+2026-04-21 16:11:36 │ INFO     │    Tapping → Next
+2026-04-21 16:11:37 │ INFO     │    Tapping Done
+2026-04-21 16:11:37 │ INFO     │    Tapping → Done
+2026-04-21 16:11:38 │ INFO     │ ⏳ Waiting for login screen...
+2026-04-21 16:11:38 │ INFO     │ ✅ Login screen is visible
+2026-04-21 16:11:38 │ INFO     │ 🔐 Logging in as buttercough3@gmail.com
+2026-04-21 16:11:38 │ INFO     │ ⏳ Waiting for login screen...
+2026-04-21 16:11:38 │ INFO     │ ✅ Login screen is visible
+2026-04-21 16:11:38 │ INFO     │    Tapping → //android.widget.EditText[@resource-id='txt_email']
+2026-04-21 16:11:41 │ INFO     │    Entering email → buttercough3@gmail.com
+2026-04-21 16:11:41 │ INFO     │    Typing 'buttercough3@gmail.com' → //android.widget.EditText[@resource-id='txt_email']
+2026-04-21 16:11:42 │ INFO     │    Tapping → //android.widget.EditText[@resource-id='txt_password']
+2026-04-21 16:11:43 │ INFO     │    Entering password → ****
+2026-04-21 16:11:43 │ INFO     │    Typing 'Password01!' → //android.widget.EditText[@resource-id='txt_password']
+2026-04-21 16:11:44 │ INFO     │    Tapping login button
+2026-04-21 16:11:47 │ INFO     │    Keyboard hidden
+2026-04-21 16:11:47 │ INFO     │    Tapping → Login
+2026-04-21 16:11:48 │ INFO     │    Waiting for Select Profile screen
+2026-04-21 16:11:50 │ INFO     │    Select Profile screen visible
+2026-04-21 16:11:50 │ INFO     │    Tap profile name: Angelo Budji
+2026-04-21 16:11:50 │ INFO     │    Tapping → //android.widget.ImageView[@content-desc="Angelo Budji"]
+2026-04-21 16:11:52 │ INFO     │ 🧪 test_smoke started
+2026-04-21 16:11:52 │ INFO     │ ⏳ Waiting for home screen...
+2026-04-21 16:12:12 │ INFO     │ ✅ Home screen is visible
+2026-04-21 16:12:12 │ INFO     │    Home screen visible → True
+2026-04-21 16:12:12 │ INFO     │  login test passed
+2026-04-21 16:12:12 │ INFO     │    Navigating to Records nav
+2026-04-21 16:12:12 │ INFO     │    Tapping → //android.widget.Button[@content-desc="Records
+Tab 3 of 5"]
+2026-04-21 16:12:13 │ INFO     │ Waiting for record screen...
+2026-04-21 16:12:14 │ INFO     │ Record screen is open...
+2026-04-21 16:12:14 │ INFO     │    Record screen visible → True
+2026-04-21 16:12:14 │ INFO     │  Records Navigation passed
+2026-04-21 16:12:14 │ INFO     │ Tap allergy...
+2026-04-21 16:12:14 │ INFO     │    Tapping → Allergy
+2026-04-21 16:12:14 │ INFO     │  waiting for allergy screen
+2026-04-21 16:12:15 │ INFO     │  Allergy screen is open...
+2026-04-21 16:12:15 │ INFO     │   Allergy screen visible: True
+2026-04-21 16:12:15 │ INFO     │  Allergy Category navigation passed
+2026-04-21 16:12:15 │ INFO     │  waiting for allergy screen
+2026-04-21 16:12:39 │ INFO     │ 📸 Screenshot saved → F:\QAs-Folder\workspace\lifesaver-inc\python_automation\Lifesaver_mobile_automation\screenshots\test_smoke_20260421_161236.png
+2026-04-21 16:12:39 │ INFO     │ 📋 Device log (logcat) attached to Allure
+2026-04-21 16:12:40 │ INFO     │ 📄 Page source attached to Allure
+2026-04-21 16:12:40 │ ERROR    │  FAILED │ test_smoke
+2026-04-21 16:12:40 │ INFO     │ 🔓 Logging out...
+2026-04-21 16:12:41 │ INFO     │  Tearing down session...
+2026-04-21 16:12:41 │ INFO     │  Session closed.

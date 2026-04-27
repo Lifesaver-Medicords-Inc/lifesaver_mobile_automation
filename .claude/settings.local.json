@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__appium-mcp__appium_session_management",
+      "mcp__appium-mcp__appium_screenshot",
+      "mcp__appium-mcp__appium_get_page_source"
+    ]
+  }
+}

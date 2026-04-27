@@ -1,0 +1,322 @@
+{
+  "allergy": {
+    "valid": [
+      {
+        "id": "allergy_001",
+        "category": "Food Allergy",
+        "allergy": "Peanuts",
+        "severity": "severe",
+        "reaction": "Anaphylaxis, hives, swelling of throat",
+        "patient_sidenote": "Always carry EpiPen. Avoid all nut-based products.",
+        "doctor_name": "Dr. Maria Santos"
+      },
+      {
+        "id": "allergy_002",
+        "category": "Drug Allergy",
+        "allergy": "Penicillin",
+        "severity": "moderate",
+        "reaction": "Skin rash, itching, fever",
+        "patient_sidenote": "Experienced reaction after first dose in 2019.",
+        "doctor_name": "Dr. James Reyes"
+      },
+      {
+        "id": "allergy_003",
+        "category": "Other",
+        "allergy": "Latex",
+        "severity": "mild",
+        "reaction": "Skin irritation and redness on contact",
+        "patient_sidenote": "Reaction occurs only with prolonged exposure.",
+        "doctor_name": "Dr. Ana Villanueva"
+      },
+      {
+        "id": "allergy_004",
+        "category": "Food Allergy",
+        "allergy": "Shellfish",
+        "severity": "severe",
+        "reaction": "Vomiting, difficulty breathing, facial swelling",
+        "patient_sidenote": "Cannot eat in seafood restaurants at all.",
+        "doctor_name": "Dr. Carlos Mendoza"
+      }
+    ],
+    "invalid": [
+      {
+        "id": "allergy_invalid_001",
+        "description": "Missing required allergy field",
+        "category": "Food Allergy",
+        "allergy": "",
+        "severity": "mild",
+        "reaction": "Hives",
+        "patient_sidenote": "Test with empty allergy name",
+        "doctor_name": "Dr. Test"
+      }
+    ]
+  },
+
+  "procedures": {
+    "valid": [
+      {
+        "id": "procedure_001",
+        "title": "Appendectomy",
+        "doctor_name": "Dr. Ricardo Dela Cruz",
+        "patient_sidenote": "Surgery was successful. Follow-up in 2 weeks. Light activity only for 30 days."
+      },
+      {
+        "id": "procedure_002",
+        "title": "Colonoscopy",
+        "doctor_name": "Dr. Elena Bautista",
+        "patient_sidenote": "Procedure done under sedation. No polyps found. Repeat in 5 years."
+      },
+      {
+        "id": "procedure_003",
+        "title": "Knee Arthroscopy",
+        "doctor_name": "Dr. Fernando Ocampo",
+        "patient_sidenote": "Physical therapy required post-op. Avoid running for 3 months."
+      },
+      {
+        "id": "procedure_004",
+        "title": "Cataract Surgery - Left Eye",
+        "doctor_name": "Dr. Luz Navarro",
+        "patient_sidenote": "Use prescribed eye drops 3x daily. Avoid rubbing eyes."
+      }
+    ],
+    "invalid": [
+      {
+        "id": "procedure_invalid_001",
+        "description": "Missing required title field",
+        "title": "",
+        "doctor_name": "Dr. Test",
+        "patient_sidenote": "Test with empty title"
+      }
+    ]
+  },
+
+  "prescription": {
+    "valid": [
+      {
+        "id": "prescription_001",
+        "purpose": "Management of Type 2 Diabetes",
+        "doctor_name": "Dr. Patricia Gomez",
+        "doctor_contact": "+63 917 123 4567",
+        "patient_sidenote": "Take with meals. Monitor blood sugar daily. Avoid alcohol.",
+        "medicines": [
+          {
+            "medicine": "Metformin",
+            "dosage": "500mg",
+            "frequency": "Twice a day",
+            "quantity": 60,
+            "medication_status": "Active"
+          },
+          {
+            "medicine": "Glipizide",
+            "dosage": "5mg",
+            "frequency": "Once a day before breakfast",
+            "quantity": 30,
+            "medication_status": "Active"
+          }
+        ]
+      },
+      {
+        "id": "prescription_002",
+        "purpose": "Hypertension Control",
+        "doctor_name": "Dr. Benjamin Torres",
+        "doctor_contact": "+63 918 987 6543",
+        "patient_sidenote": "Check BP every morning. Do not skip doses.",
+        "medicines": [
+          {
+            "medicine": "Amlodipine",
+            "dosage": "10mg",
+            "frequency": "Once a day",
+            "quantity": 30,
+            "medication_status": "Active"
+          },
+          {
+            "medicine": "Losartan",
+            "dosage": "50mg",
+            "frequency": "Once a day at bedtime",
+            "quantity": 30,
+            "medication_status": "Finished"
+          }
+        ]
+      },
+      {
+        "id": "prescription_003",
+        "purpose": "Post-operative Pain Management",
+        "doctor_name": "Dr. Sofia Aquino",
+        "doctor_contact": "+63 920 555 7890",
+        "patient_sidenote": "Take only when pain is a 5 or above on the pain scale.",
+        "medicines": [
+          {
+            "medicine": "Tramadol",
+            "dosage": "50mg",
+            "frequency": "Every 8 hours as needed",
+            "quantity": 15,
+            "medication_status": "Finished"
+          },
+          {
+            "medicine": "Celecoxib",
+            "dosage": "200mg",
+            "frequency": "Twice a day with food",
+            "quantity": 20,
+            "medication_status": "Finished"
+          }
+        ]
+      },
+      {
+        "id": "prescription_004",
+        "purpose": "Respiratory Infection Treatment",
+        "doctor_name": "Dr. Marco Lim",
+        "doctor_contact": "+63 919 222 3344",
+        "patient_sidenote": "Complete the full course even if feeling better.",
+        "medicines": [
+          {
+            "medicine": "Azithromycin",
+            "dosage": "500mg",
+            "frequency": "Once a day",
+            "quantity": 5,
+            "medication_status": "Finished"
+          },
+          {
+            "medicine": "Salbutamol Inhaler",
+            "dosage": "2 puffs",
+            "frequency": "Every 4-6 hours as needed",
+            "quantity": 1,
+            "medication_status": "Active"
+          }
+        ]
+      }
+    ],
+    "invalid": [
+      {
+        "id": "prescription_invalid_001",
+        "description": "Quantity is not an integer",
+        "purpose": "Test Invalid Quantity",
+        "doctor_name": "Dr. Test",
+        "doctor_contact": "+63 900 000 0000",
+        "patient_sidenote": "Testing invalid quantity input",
+        "medicines": [
+          {
+            "medicine": "TestMed",
+            "dosage": "10mg",
+            "frequency": "Once a day",
+            "quantity": "thirty",
+            "medication_status": "Active"
+          }
+        ]
+      }
+    ]
+  },
+
+  "vaccine": {
+    "valid": [
+      {
+        "id": "vaccine_001",
+        "vaccine_name": "Influenza Vaccine",
+        "type_of_vaccine": "Inactivated",
+        "vaccine_lot_no": "FLU2025-A4421",
+        "vaccine_mfr": "Sanofi Pasteur",
+        "vis": "Influenza VIS 2025",
+        "vis_date": "2025-01-15",
+        "vaccinator": "Nurse Carla Reyes",
+        "patient_sidenote": "Mild arm soreness for 2 days after injection. Annual vaccine."
+      },
+      {
+        "id": "vaccine_002",
+        "vaccine_name": "Hepatitis B Vaccine",
+        "type_of_vaccine": "Recombinant",
+        "vaccine_lot_no": "HEPB-B9982",
+        "vaccine_mfr": "GlaxoSmithKline",
+        "vis": "Hepatitis B VIS",
+        "vis_date": "2024-06-10",
+        "vaccinator": "Dr. Ramon Flores",
+        "patient_sidenote": "3rd dose of 3-dose series. Series now complete."
+      },
+      {
+        "id": "vaccine_003",
+        "vaccine_name": "COVID-19 Vaccine",
+        "type_of_vaccine": "mRNA",
+        "vaccine_lot_no": "CV19-EK5517J",
+        "vaccine_mfr": "Pfizer-BioNTech",
+        "vis": "COVID-19 mRNA VIS",
+        "vis_date": "2024-09-01",
+        "vaccinator": "Nurse Donna Pascual",
+        "patient_sidenote": "Booster dose. Slight fever and fatigue for 1 day post-vaccination."
+      },
+      {
+        "id": "vaccine_004",
+        "vaccine_name": "Pneumococcal Vaccine",
+        "type_of_vaccine": "Conjugate",
+        "vaccine_lot_no": "PNEU-CC7743",
+        "vaccine_mfr": "Pfizer",
+        "vis": "Pneumococcal VIS",
+        "vis_date": "2024-03-20",
+        "vaccinator": "Dr. Helen Cruz",
+        "patient_sidenote": "Recommended due to age. No adverse reactions noted."
+      }
+    ],
+    "invalid": [
+      {
+        "id": "vaccine_invalid_001",
+        "description": "Invalid VIS date format",
+        "vaccine_name": "Test Vaccine",
+        "type_of_vaccine": "Inactivated",
+        "vaccine_lot_no": "TST-0001",
+        "vaccine_mfr": "Test Manufacturer",
+        "vis": "Test VIS",
+        "vis_date": "20-13-2025",
+        "vaccinator": "Test Vaccinator",
+        "patient_sidenote": "Testing invalid date format"
+      }
+    ]
+  },
+
+  "expenses": {
+    "valid": [
+      {
+        "id": "expense_001",
+        "date": "2025-04-01",
+        "description": "Emergency Room Visit - St. Luke's Medical Center",
+        "amount": 8500.00
+      },
+      {
+        "id": "expense_002",
+        "date": "2025-03-15",
+        "description": "Monthly Maintenance Medicines",
+        "amount": 2350.75
+      },
+      {
+        "id": "expense_003",
+        "date": "2025-02-20",
+        "description": "Annual Physical Examination",
+        "amount": 4200.00
+      },
+      {
+        "id": "expense_004",
+        "date": "2025-01-10",
+        "description": "Knee Arthroscopy Surgery Fee",
+        "amount": 75000.00
+      },
+      {
+        "id": "expense_005",
+        "date": "2025-04-10",
+        "description": "Influenza Vaccination",
+        "amount": 1500.00
+      }
+    ],
+    "invalid": [
+      {
+        "id": "expense_invalid_001",
+        "description": "Missing required amount field",
+        "date": "2025-04-24",
+        "expense_description": "Test missing amount",
+        "amount": ""
+      },
+      {
+        "id": "expense_invalid_002",
+        "description": "Negative amount value",
+        "date": "2025-04-24",
+        "expense_description": "Test negative amount",
+        "amount": -500.00
+      }
+    ]
+  }
+}
