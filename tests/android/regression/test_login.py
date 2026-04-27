@@ -1,10 +1,10 @@
 import pytest
 import allure
 
+from utils.logger_utils import log
 from pages.android.login_page import LoginPage
 from pages.android.home_page import HomePage
 from pages.android.profile_selection import ProfileSelection
-from utils.logger_utils import log
 from pages.android.onboarding_page import OnboardingPage
 
 @allure.feature("Authentication - Android")
@@ -12,7 +12,7 @@ class TestAndroidLoginSmoke:
 
     @allure.story("Valid Login")
     @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_email_login_success(self, driver):
         log.info("🧪 test_email_login_success started")
 

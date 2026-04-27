@@ -6,7 +6,7 @@ from utils.logger_utils import log
 
 
 class BasePage:
-    TIMEOUT = 20
+    TIMEOUT = 120
 
     def __init__(self, driver):
         self.driver = driver

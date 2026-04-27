@@ -159,10 +159,10 @@ pytest tests/android/ --platform android --test-type smoke -v -s
 pytest tests/android/ --platform android --test-type smoke -x
 
 # run specific test file
-pytest tests/android/smoke/test_login.py --platform android --test-type smoke
+pytest tests/android/smoke/test_smoke.py --platform android --test-type smoke
 
 # run specific test
-pytest tests/android/smoke/test_login.py::TestAndroidLoginSmoke::test_email_login_success --platform android --test-type smoke
+pytest tests/android/smoke/test_smoke.py::TestAndroidLoginSmoke::test_email_login_success --platform android --test-type smoke
 ```
 
 ---
@@ -183,7 +183,7 @@ pytest tests/android/smoke/test_login.py::TestAndroidLoginSmoke::test_email_logi
 pytest tests/android/ --platform android --test-type smoke
 
 # open report in browser
-allure serve allure-results
+allure serve allure-results/
 
 # install allure CLI (if not installed)
 # mac

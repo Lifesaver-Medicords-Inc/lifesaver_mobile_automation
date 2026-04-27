@@ -1,0 +1,36 @@
+{
+  "test_scenarios": {
+    "allergy": {
+      "basic_allergy": {
+        "title": "Peanuts",
+        "category": "Food",
+        "reaction": "Severe rash and difficulty breathing",
+        "severity": "Severe",
+        "doctor": "Dr. Smith",
+        "date": "01/15/2024"
+      },
+      "edge_case_allergy": {
+        "title": "A very long allergy name that might cause UI issues with text wrapping and display problems in the mobile application interface",
+        "category": "Environmental",
+        "reaction": "Minor irritation",
+        "severity": "Mild",
+        "doctor": "Dr. Johnson",
+        "date": "12/31/2023"
+      }
+    },
+    "procedure": {
+      "basic_procedure": {
+        "title": "Appendectomy",
+        "note": "Emergency surgery due to acute appendicitis",
+        "doctor": "Dr. Williams",
+        "date": "03/10/2024"
+      },
+      "complex_procedure": {
+        "title": "Cardiac Catheterization",
+        "note": "Diagnostic procedure for coronary artery disease assessment with detailed follow-up care instructions and medication regimen",
+        "doctor": "Dr. Davis",
+        "date": "02/28/2024"
+      }
+    }
+  }
+}

@@ -11,9 +11,9 @@ class ProfileSelection(BasePage):
         self.wait = WebDriverWait(driver, self.TIMEOUT)
 
     # ── Locators ──────────────────────────────────────────────────────────────
-    TITLE_PAGE   = (AppiumBy.ACCESSIBILITY_ID, "Select Profile")
-    ALL_PROFILES = (AppiumBy.XPATH, '//android.widget.ImageView[@content-desc]')
-    ADD_PROFILE_BTN      = (AppiumBy.XPATH, "//android.widget.Button")
+    TITLE_PAGE          = (AppiumBy.ACCESSIBILITY_ID, "Select Profile")
+    ALL_PROFILES        = (AppiumBy.XPATH, '//android.widget.ImageView[@content-desc]')
+    ADD_PROFILE_BTN     = (AppiumBy.XPATH, "//android.widget.Button")
 
     # ── Waits ─────────────────────────────────────────────────────────────────
     def wait_for_screen(self):
@@ -30,6 +30,7 @@ class ProfileSelection(BasePage):
     # ── Actions ───────────────────────────────────────────────────────────────
     def tap_profile_name(self, name: str):
         log.info(f"   Tap profile name: {name}")
+        # locator = (AppiumBy.XPATH, f'//*[contains(@content-desc, "{name}")]')
         locator = (AppiumBy.XPATH, f'//android.widget.ImageView[@content-desc="{name}"]')
         self.tap(locator)
 

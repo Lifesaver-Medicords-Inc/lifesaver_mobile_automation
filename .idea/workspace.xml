@@ -5,56 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="470459b5-c3e6-4b91-aad0-bd6aa4144a62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/android/onboarding_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/android/profile_selection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_102832.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_105921.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_110600.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_112343.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_113050.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_113258.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_113411.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_113707.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_114055.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_114622.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_131432.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_132521.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_134159.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_134713.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_135007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_135603.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_140101.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_140215.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_141326.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_143148.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_144157.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_151631.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_152637.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_154026.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_154211.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_154402.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260417_154447.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_103749.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_103828.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_103958.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_134731.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_135029.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_143207.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_144013.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_144212.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_144713.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_145430.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_150803.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/test_email_login_success_20260420_150924.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/android/procedures_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/android/records_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-data/record_test_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/android/regression/test_create_prescription.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/android/regression/test_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/android_caps.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/android_caps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/android/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/android/home_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/android/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/android/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/android/profile_selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/android/profile_selection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/android/smoke/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/android/smoke/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/android/smoke/create_prescription.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/android/allergy_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/android/smoke/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/android/smoke/test_smoke.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +27,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="364" />
+    <option name="cachedIndexableFilesCount" value="581" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -86,24 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.onboarding_page.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "dev__branch",
-    "last_opened_file_path": "F:/QAs-Folder/workspace/lifesaver-inc/python_automation/Lifesaver_mobile_automation"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.onboarding_page.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev__branch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/QAs-Folder/workspace/lifesaver-inc/python_automation/Lifesaver_mobile_automation&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AcpAgentsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\QAs-Folder\workspace\lifesaver-inc\python_automation\Lifesaver_mobile_automation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\QAs-Folder\workspace\lifesaver-inc\python_automation\Lifesaver_mobile_automation\tests\android\regression" />
       <recent name="F:\QAs-Folder\workspace\lifesaver-inc\python_automation\Lifesaver_mobile_automation" />
     </key>
   </component>
